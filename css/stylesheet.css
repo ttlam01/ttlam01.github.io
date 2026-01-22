@@ -1,0 +1,139 @@
+:root{
+  --bg:#1c1c1c;
+  --fg:#f9f9f9;
+  --muted:#cfcfcf;
+  --link:#88ccff;
+  --max:1000px;
+}
+
+/* ===== Base ===== */
+html,body{
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:var(--fg);
+  font-family:"EB Garamond", Garamond, serif;
+}
+
+a{
+  color:inherit;
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+a:hover{opacity:0.85;}
+
+header{
+  padding:28px 20px;
+  border-bottom:1px solid rgba(255,255,255,0.15);
+}
+
+header .site-title{
+  max-width:var(--max);
+  margin:0 auto;
+  font-size:28px;
+  font-weight:600;
+}
+
+main{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:28px 20px 60px;
+}
+
+/* ===== Top section ===== */
+.top{
+  display:grid;
+  grid-template-columns:220px 1fr;
+  gap:24px;
+  align-items:start;
+}
+@media (max-width:720px){
+  .top{grid-template-columns:1fr;}
+}
+
+.profile-pic img{
+  width:100%;
+  height:auto;
+  border-radius:6px;
+  display:block;
+}
+
+.contact h1{margin:0 0 8px;font-size:28px;}
+.contact p{
+  margin:4px 0;
+  line-height:1.25;
+  color:var(--muted);
+  font-size:18px;
+}
+.contact p strong{
+  color:var(--fg);
+  font-weight:600;
+}
+
+/* ===== Sections ===== */
+.section{margin-top:28px;}
+.section p{
+  margin:0 0 14px;
+  line-height:1.45;
+  font-size:18px;
+  color:var(--muted);
+}
+
+/* ===== Media row ===== */
+.media-row{
+  display:grid;
+  grid-template-columns:1.1fr 0.9fr;
+  gap:10px;
+  align-items:stretch;
+  margin:18px 0 8px;
+}
+@media (max-width:900px){
+  .media-row{grid-template-columns:1fr;}
+}
+
+.media-box{
+  height: clamp(320px, 36vw, 440px);
+}
+
+.media-row{
+  gap: 0;
+}
+
+.media{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+  border-radius:6px;
+}
+
+/* ===== Figures ===== */
+figure{margin:0;}
+
+figcaption{
+  margin-top:8px;
+  font-size:16px;
+  line-height:1.35;
+  color:#dddddd;
+  text-align:center;
+}
+
+/* ===== Lists ===== */
+h2{margin:0 0 10px;font-size:22px;}
+ul{margin:8px 0 0 22px;}
+li{
+  margin:10px 0;
+  color:var(--muted);
+  font-size:18px;
+  line-height:1.4;
+}
+
+/* ===== Papers links ===== */
+.papers a{
+  color:var(--link);
+  text-decoration:none;
+}
+.papers a:hover{
+  text-decoration:underline;
+}
+
