@@ -70,6 +70,13 @@ main{
   font-weight:600;
 }
 
+.contact-row{
+  display:grid;
+  grid-template-columns:4.5em 1fr;
+  column-gap:0.5em;
+}
+
+
 /* ===== Sections ===== */
 .section{margin-top:28px;}
 .section p{
