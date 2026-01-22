@@ -3,7 +3,7 @@
   --fg:#f9f9f9;
   --muted:#cfcfcf;
   --link:#88ccff;
-  --max:1000px;
+  --max:800px;
 }
 
 /* ===== Base ===== */
@@ -92,8 +92,9 @@ main{
 }
 
 .media-box{
-  height: clamp(320px, 36vw, 440px);
+  height: clamp(280px, 32vw, 400px);
 }
+
 
 .media-row{
   gap: 0;
