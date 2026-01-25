@@ -127,7 +127,7 @@ figure {
 figcaption {
   margin-top: 8px;
   font-size: 16px;
-  line-height: 1.35;
+  line-height: 1.3;
   color: #dddddd;
   text-align: center;
 }
@@ -135,7 +135,7 @@ figcaption {
 .narrow-caption {
   max-width: 85%;
   margin: 0 auto;
-  margin-top: 0.75em; /* add breathing room above caption */
+  margin-top: 0.75em; 
 }
 
 
