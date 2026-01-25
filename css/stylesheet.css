@@ -126,6 +126,12 @@ figcaption{
   text-align:center;
 }
 
+.narrow-caption {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+
 /* ===== Lists ===== */
 h2{margin:0 0 10px;font-size:22px;}
 ul{margin:8px 0 0 22px;}
