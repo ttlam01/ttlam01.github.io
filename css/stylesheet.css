@@ -3,7 +3,7 @@
   --fg:#f9f9f9;
   --muted:#cfcfcf;
   --link:#88ccff;
-  --max:800px;
+  --max:750px;
 }
 
 /* ===== Base ===== */
@@ -116,19 +116,26 @@ main{
 }
 
 /* ===== Figures ===== */
-figure{margin:0;}
+figure { 
+  margin: 0; 
+}
 
-figcaption{
-  margin-top:8px;
-  font-size:16px;
-  line-height:1.35;
-  color:#dddddd;
-  text-align:center;
+.figure-block {
+  margin-top: 2em;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.35;
+  color: #dddddd;
+  text-align: center;
 }
 
 .narrow-caption {
   max-width: 85%;
   margin: 0 auto;
+  margin-top: 0.75em; /* add breathing room above caption */
 }
 
 
